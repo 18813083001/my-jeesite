@@ -39,6 +39,7 @@ public class MenuController extends BaseController {
 	@Autowired
 	private SystemService systemService;
 	
+	
 	@ModelAttribute("menu")
 	public Menu get(@RequestParam(required=false) String id) {
 		if (StringUtils.isNotBlank(id)){
